@@ -1,0 +1,21 @@
+LAB-1 REVIEW
+
+Project: Smart Lab Equipment Slot Reservation Portal
+Team No: 001
+Problem Statement: 001
+
+Lab-1 covers the problem statement, functional and non-functional requirements, and UML use-case relationships.
+
+My assigned Use Case:
+1. View Equipment Availability
+
+Primary Actor: Student
+
+Main flow:
+Student logs in → selects View Equipment Availability → system displays equipment and available time slots → student can search/filter equipment → system shows matching results.
+
+Alternate flow:
+If no equipment is available, the system displays a message and allows the student to modify the search/filter criteria.
+
+Use Case Relationship:
+View Equipment Availability <<include>> Search / Filter Equipment.
