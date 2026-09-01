@@ -1,5 +1,8 @@
 LAB-1 REVIEW
 
+NAME-MANJUNATHA H J
+SRN-PES1UG24AM157
+
 Project: Smart Lab Equipment Slot Reservation Portal
 Team No: 001
 Problem Statement: 001
