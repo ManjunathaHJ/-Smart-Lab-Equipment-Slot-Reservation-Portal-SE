@@ -1,0 +1,270 @@
+SMART LAB EQUIPMENT SLOT RESERVATION PORTAL
+Software Engineering Project Report
+
+Team: 001
+Problem Statement: 001
+Student: Manjunatha H J
+SRN: PES1UG24AM157
+University: PES University – RR Campus
+Department: Artificial Intelligence and Machine Learning
+
+============================================================
+1. PROJECT OVERVIEW
+============================================================
+
+The Smart Lab Equipment Slot Reservation Portal is designed to
+help students reserve laboratory equipment for specific time
+slots while allowing technicians to manage equipment availability,
+calibration status, and returns.
+
+The system aims to reduce double bookings, ensure that only
+properly calibrated equipment is reserved, and maintain accurate
+records of equipment usage.
+
+============================================================
+2. PROBLEM STATEMENT
+============================================================
+
+Laboratory equipment may have limited availability and must be
+properly managed to avoid conflicts and misuse.
+
+The proposed portal provides a centralized system through which
+students can view equipment availability, search and filter
+equipment, reserve available slots, and receive reservation
+confirmation.
+
+Technicians can update equipment availability and calibration
+information, while equipment returns and late returns can also
+be tracked.
+
+============================================================
+3. FUNCTIONAL REQUIREMENTS
+============================================================
+
+FR001:
+Authenticated students shall be able to view real-time equipment
+availability and reserve equipment for a maximum two-hour slot,
+up to seven days in advance.
+
+FR002:
+The system shall verify the calibration status of equipment before
+confirming a reservation.
+
+FR003:
+The system shall prevent overlapping reservations for the same
+equipment and time slot.
+
+FR004:
+The system shall record equipment returns and identify late
+returns.
+
+FR005:
+Technicians shall be able to update equipment availability and
+calibration status.
+
+============================================================
+4. NON-FUNCTIONAL REQUIREMENTS
+============================================================
+
+NFR001:
+Concurrent reservation requests should be handled within 200 ms
+using appropriate database-level locking/isolation.
+
+NFR002:
+Confirmed reservation records and reservation tokens should
+persist without data loss.
+
+============================================================
+5. MAIN USE CASE
+============================================================
+
+Use Case: View Equipment Availability
+
+Actor:
+Student
+
+Precondition:
+The student is authenticated and logged into the system.
+
+Main Flow:
+1. Student logs into the portal.
+2. Student selects "View Equipment Availability".
+3. System displays available laboratory equipment and slots.
+4. Student searches or filters the equipment list.
+5. System displays the matching equipment and available slots.
+
+The availability information can then be used by the student to
+select an appropriate equipment slot for reservation.
+
+============================================================
+6. USE CASE RELATIONSHIPS
+============================================================
+
+View Equipment Availability
+    -> Search / Filter Equipment
+
+Reserve Equipment Slot
+    -> Check Slot Availability
+    -> Lock Slot & Generate Reservation Token
+
+Manage Return & Late-Return Rules
+    -> Record Equipment Return
+
+============================================================
+7. AGILE EPICS
+============================================================
+
+Epic 1: Equipment Availability Management
+
+Epic 2: Equipment Reservation Management
+
+Epic 3: Equipment Calibration Management
+
+Epic 4: Equipment Return & Tracking
+
+============================================================
+8. AGILE USER STORIES
+============================================================
+
+1. View Equipment Availability
+   Priority: High
+   Story Points: 3
+
+2. Search / Filter Equipment
+   Priority: High
+   Story Points: 2
+
+3. Reserve Equipment Slot
+   Priority: High
+   Story Points: 5
+
+4. Check Slot Availability
+   Priority: High
+   Story Points: 3
+
+5. Lock Slot & Generate Reservation Token
+   Priority: High
+   Story Points: 5
+
+6. Verify Calibration Status
+   Priority: High
+   Story Points: 3
+
+7. Update Equipment Availability
+   Priority: High
+   Story Points: 5
+
+8. Update Calibration Status
+   Priority: High
+   Story Points: 5
+
+9. Record Equipment Return
+   Priority: Medium
+   Story Points: 3
+
+10. Manage Return & Late-Return Rules
+    Priority: Medium
+    Story Points: 3
+
+Total Story Points: 37
+
+============================================================
+9. SPRINT PLAN
+============================================================
+
+SPRINT 1
+
+Goal:
+Enable students to find available laboratory equipment and
+successfully reserve an available time slot.
+
+Duration:
+28 September 2026 – 5 October 2026
+
+Planned Story Points:
+18
+
+Stories:
+- View Equipment Availability
+- Search / Filter Equipment
+- Reserve Equipment Slot
+- Check Slot Availability
+- Lock Slot & Generate Reservation Token
+
+
+SPRINT 2
+
+Goal:
+Ensure equipment calibration, technician updates, equipment
+returns, and late-return tracking are managed accurately.
+
+Duration:
+5 October 2026 – 12 October 2026
+
+Planned Story Points:
+19
+
+Stories:
+- Verify Calibration Status
+- Update Equipment Availability
+- Update Calibration Status
+- Record Equipment Return
+- Manage Return & Late-Return Rules
+
+============================================================
+10. JIRA / SCRUM SIMULATION
+============================================================
+
+The Agile development process was simulated using Jira.
+
+The backlog was organized into Epics and User Stories. Each story
+was assigned a priority and Fibonacci-based story point estimate.
+
+Two one-week sprints were created.
+
+During the sprint simulation, stories were moved through the Jira
+workflow:
+
+To Do -> In Progress -> Done
+
+The Burndown Chart was used to observe the remaining estimated
+work throughout the sprint.
+
+The sprint activity represents a simulated Agile workflow rather
+than implementation of the complete software system.
+
+============================================================
+11. ESTIMATION
+============================================================
+
+Story points were assigned using relative complexity, effort,
+uncertainty, and scope.
+
+Smaller tasks such as Search / Filter Equipment were assigned
+2 points.
+
+More complex functionality such as Reserve Equipment Slot,
+Lock Slot & Generate Reservation Token, and technician management
+tasks were assigned 5 points.
+
+The total backlog estimate is:
+
+37 Story Points
+
+============================================================
+12. CONCLUSION
+============================================================
+
+The project requirements were converted into an Agile backlog
+consisting of Epics and User Stories.
+
+The backlog was prioritized and estimated using story points.
+Two one-week sprints were planned and simulated in Jira.
+
+The project demonstrates how the requirements of the Smart Lab
+Equipment Slot Reservation Portal can be organized and managed
+using Scrum practices.
+
+============================================================
+END OF REPORT
+============================================================
